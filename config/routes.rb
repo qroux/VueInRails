@@ -6,4 +6,7 @@ Rails.application.routes.draw do
       resources :records
     end
   end
+
+  root to: "home#index"
+
 end
