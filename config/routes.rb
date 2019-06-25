@@ -1,12 +1,11 @@
 Rails.application.routes.draw do
 
-  namesapce :api do
-    namesapce :v1 do
+  namespace :api do
+    namespace :v1 do
       resources :artists
       resources :records
     end
   end
 
   root to: "home#index"
-
 end
